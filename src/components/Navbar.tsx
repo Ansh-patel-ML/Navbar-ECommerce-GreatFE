@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="max-w-[1216px] mx-auto p-4">
+    <header className="max-w-[1216px] mx-auto p-4 py-[38px]">
       <nav className="flex flex-row items-center max-tablet:gap-0 gap-[103px]">
         {/* StyleNest logo */}
         <img src={StyleNestLogo} alt="styleNest logo" className="h-8 z-10" />
