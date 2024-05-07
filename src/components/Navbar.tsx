@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="max-w-[1216px] mx-auto p-4 py-[38px]">
+    <header className="max-w-[1216px] mx-auto p-4 py-[34px]">
       <nav className="flex flex-row items-center max-tablet:gap-0 gap-[103px]">
         {/* StyleNest logo */}
         <img src={StyleNestLogo} alt="styleNest logo" className="h-8 z-10" />
@@ -68,6 +68,7 @@ const Navbar = () => {
             focusable="true"
             tabIndex={0}
             className="px-[3px] py-[2px] focus:outline-none focus:ring focus:ring-violet-200 rounded-tablet"
+            size={30}
           />
           {/* Close Icon when menu is open */}
           {toggleMenu ? (
@@ -76,6 +77,7 @@ const Navbar = () => {
               tabIndex={0}
               onClick={handleToggleMenu}
               className="px-[3px] py-[2px] hidden max-tablet:inline-flex z-10 focus:outline-none focus:ring focus:ring-violet-200 rounded-tablet"
+              size={30}
             />
           ) : (
             /* Menu Icon when menu is closed */
@@ -85,6 +87,7 @@ const Navbar = () => {
               tabIndex={0}
               className="px-[3px] py-[2px] hidden max-tablet:inline-flex z-10 focus:outline-none focus:ring focus:ring-violet-200 rounded-tablet"
               onClick={handleToggleMenu}
+              size={30}
             />
           )}
         </div>
