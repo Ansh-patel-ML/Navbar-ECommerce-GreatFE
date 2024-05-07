@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <header className="max-w-[1216px] mx-auto p-4">
-      <nav className="flex flex-row items-center max-md:gap-0 gap-[103px]">
+      <nav className="flex flex-row items-center max-tablet:gap-0 gap-[103px]">
         {/* StyleNest logo */}
         <img src={StyleNestLogo} alt="styleNest logo" className="h-8 z-10" />
         {/* Menu */}
@@ -25,26 +25,26 @@ const Navbar = () => {
           {/* Menu items */}
           <div
             className={`
-            max-md:absolute
-            max-md:min-h-screen
-            max-md:w-screen
-            max-md:left-0
-            max-md:px-7
-            max-md:top-0
-            max-md:pt-24
-            max-md:py-[6px]
+            max-tablet:absolute
+            max-tablet:min-h-screen
+            max-tablet:w-screen
+            max-tablet:left-0
+            max-tablet:px-7
+            max-tablet:top-0
+            max-tablet:pt-24
+            max-tablet:py-[6px]
             ${toggleMenu ? "bg-white" : "bg-transparent"}
           `}
           >
             <ul
-              className={`flex flex-col md:flex-row gap-[34px] ${
-                toggleMenu ? "max-md:visible" : "max-md:hidden"
+              className={`flex flex-col tablet:flex-row gap-[34px] ${
+                toggleMenu ? "max-tablet:visible" : "max-tablet:hidden"
               }`}
             >
               <li>
                 <a
                   href="#"
-                  className="text-neutral-900 px-2 md:text-neutral-600 hover:text-[#171717] text-sm md:text-base font-normal md:font-medium focus:outline-none focus:ring focus:ring-violet-200 rounded-md"
+                  className="text-neutral-900 px-2 tablet:text-neutral-600 hover:text-[#171717] text-sm tablet:text-base font-normal tablet:font-medium focus:outline-none focus:ring focus:ring-violet-200 rounded-tablet"
                 >
                   Shop all
                 </a>
@@ -52,7 +52,7 @@ const Navbar = () => {
               <li>
                 <a
                   href="#"
-                  className="text-neutral-900 px-2 md:text-neutral-600 hover:text-[#171717] text-sm md:text-base font-normal md:font-medium focus:outline-none focus:ring focus:ring-violet-200 rounded-md"
+                  className="text-neutral-900 px-2 tablet:text-neutral-600 hover:text-[#171717] text-sm tablet:text-base font-normal tablet:font-medium focus:outline-none focus:ring focus:ring-violet-200 rounded-tablet"
                 >
                   Latest arrivals
                 </a>
@@ -67,7 +67,7 @@ const Navbar = () => {
             color="#525252"
             focusable="true"
             tabIndex={0}
-            className="px-[3px] py-[2px] focus:outline-none focus:ring focus:ring-violet-200 rounded-md"
+            className="px-[3px] py-[2px] focus:outline-none focus:ring focus:ring-violet-200 rounded-tablet"
           />
           {/* Close Icon when menu is open */}
           {toggleMenu ? (
@@ -75,7 +75,7 @@ const Navbar = () => {
               focusable="true"
               tabIndex={0}
               onClick={handleToggleMenu}
-              className="px-[3px] py-[2px] hidden max-md:inline-flex z-10 focus:outline-none focus:ring focus:ring-violet-200 rounded-md"
+              className="px-[3px] py-[2px] hidden max-tablet:inline-flex z-10 focus:outline-none focus:ring focus:ring-violet-200 rounded-tablet"
             />
           ) : (
             /* Menu Icon when menu is closed */
@@ -83,7 +83,7 @@ const Navbar = () => {
               color="#525252"
               focusable="true"
               tabIndex={0}
-              className="px-[3px] py-[2px] hidden max-md:inline-flex z-10 focus:outline-none focus:ring focus:ring-violet-200 rounded-md"
+              className="px-[3px] py-[2px] hidden max-tablet:inline-flex z-10 focus:outline-none focus:ring focus:ring-violet-200 rounded-tablet"
               onClick={handleToggleMenu}
             />
           )}
